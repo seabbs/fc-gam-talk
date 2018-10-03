@@ -260,6 +260,8 @@ class: center, middle, inverse
 ---
 class: middle
 
+- This talk (https://github.com/seabbs/fc-gam-talk)
+
 - A short introduction (https://m-clark.github.io/generalized-additive-models/building_gam.html)
 
 - Generalized Additive Models - An Introduction with R by Simon N. Wood
