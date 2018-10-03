@@ -1,6 +1,6 @@
 ---
 title: "GAMs - sorry you mean GLMs?"
-subtitle: "A brief introduction to generalised additive models"
+subtitle: "A brief introduction to generalized additive models"
 author: "Sam Abbott"
 date: "2018/10/03"
 output:
@@ -18,7 +18,19 @@ options(htmltools.dir.version = FALSE)
 
 # Aims
 
-1. 
+1. Why GAMs
+
+2. GLM to GAM
+
+3. Smooths
+
+5. GAM packages
+
+4. Tools for GAMs
+
+6. Applications
+
+7. Signposting
 
 ---
 class: center, middle, inverse
@@ -26,10 +38,14 @@ class: center, middle, inverse
 # Why GAMS
 
 ---
+class: middle
+
 
 - Shown to perform comparably to cutting edge machine learning techniques
 
+
 - Statistically sound methodology for feature generation and selection
+
 
 - Some level of interpretability (in comparision to other ML methods).
 
@@ -40,7 +56,96 @@ class: center, middle, inverse
 
 ---
 
-# 
+# Linear models
+
+- The target is linearly predicted by a sum of the predictors multiplied by some coefficients
+
+- Assumes a normal distribution for the target
+
+- Presented as follows:
+
+$$y\sim \mathcal{N}(\mu,\sigma^2)$$ $$\mu = b_0+b_1X_1+b_2X_2...+b_pX_p$$
+
+- Unlikely to capture data generating mechanisms in many scenarios.
+---
+# GLM model
+
+- General form:
+
+$$g(\mu) = X\beta$$
+
+$$g(\mu) = \eta = X\beta$$ 
+
+$$E(y) = \mu = g^{-1}(\eta)$$
+
+- Key difference between linear models and GLMs is the link function $g(.)$, which relates the mean $\mu$ to the linear predictors.
+
+- Commonly used link functions as the poisson distribution for count data and the logistic/logit link function for probabilities.
+
+---
+# Dealing with non-linear data
+
+- GLM models are still linear sums of predictors, which are all transformed by the link function. 
+
+- This may not deal with the non-linear relationship between a given predictor and the target variable
+
+- Common strategies to deal with this include
+  1. Introducing polynomial terms such as $x^2$ etc.
+  2. Categorising a continuous variable
+  3. Using a non-parametric spline
+ 
+---
+# Issues with these approaches
+ 
+- **Ad hoc and time consuming**
+
+- **Manual**
+
+- **Overfitting**
+
+- May not lead to the most efficient/minimal model
+
+- Polynomials are difficult to interpret and often don't capture the tails of the relationship.
+
+- Variable categorisation removes information and reduces power. 
+
+- Non-paramteric splines require knot locations and numbers to be set. (Often quartiles are used for this).
+
+---
+# Generalized Addivitive Models
+
+- **In a nutshell: Use smooth functions for your predictors, in a framework that automates the selection of these functions.**
+
+- Linear model
+
+$$y = \gamma_0 + \gamma_1\cdot x$$
+
+- General GAM model
+
+$$y = f(x) + \epsilon$$
+
+- GAM model with a basis
+
+$$y = f(x) + \epsilon = \sum_{j=1}^{d}B_j(x)\gamma_j + \epsilon$$
+
+- $B_j$ is a basis function that is the transformed $x$ depending on the type of basis considered. An example of this would be the polynomial basis often used in GLM models. Another commonly known example would be a cubic spline basis.
+
+---
+
+# Smooth Penalities
+
+- The above formulation could still be a manual error filled process. Thankfully we can use penalized likelihood estimation to choose the amount of smoothing. 
+
+- This is conceptually no different to using a penalized GLM (lass or ridge regression)
+
+- Smoothing is complex (read the recommended book for more) but in short it works as follows:
+
+$$\mathcal{Loss} = \sum (y-X\beta)^2 + \color{darkred}{\mathcal{penalty}}$$
+
+- The penalty is applied based on the complexity of the model and the size of the coefficients for the smooth terms. Non-linear terms can be completely removed using this process.
+
+- **Take away:** GAM smooth terms can be fitted without overfitting the data and are generally applicable to unseen data. :) 
+
 
 ---
 class: center, middle, inverse
@@ -49,43 +154,89 @@ class: center, middle, inverse
 
 ---
 
-# 
+# Thin plan regression splines
+
+- Low rank (fewer terms than data points) isotropic (uniformity in all orientations - covariate rotation will have no impact) smoothers of any number of covariates. 
+
+- Default choice as there is defined sense in which they are optimal (see recommended book).
+
+- Do not have knots and therefore have no knot placement issues.
+
+- Smoothing based on the second order differentials.
+
+- Can be expensive for large data.
+
+---
+
+# Cubic regression splines
+
+-  Cubic polynomial basis
+
+- Knots spread evenly throughout covariate values
+
+- Penalized by second derivatives.
+
+---
+
+# Other splines
+
+-  Cyclic splines (first and last point are equal and  have equal first derivatives)
+
+- Random effect splines
+
+- Spatial splines
+
+- Various other splines available see `?mgcv::s` for details.
 
 ---
 class: center, middle, inverse
 
-# Smoothing penalities and model selection
+# GAM packages
 
 ---
 
+## Fitting GAMs
+
+- `mgcv` package. Modern and provides big data methods. Automated smoothing and variable selection built in
+
+- `brms` package. A bayesian modelling package using STAN. Inputs are traditional R model formulas and `mgcv` smooths maybe used.
+
+- `gam` Original GAM package written by Trevor Hastie (i.e the elements of statistical learning!). Outdated but still usable.
+
+## Visualising GAMs
+
+- `mgcViz` package. More advanced visualisation tools than provided in `mgcv`. Built on ggplot so easily extensible and customisable. Developer is involved and keen to educate GAM users!
 
 
 ---
 class: center, middle, inverse
+
+# Tools for GAMs
+
+---
+
+# Model selection
+
+- P value based selection
+
+- AIC stepwise selection (likelihood penalized by model complexity).
+
+- Automated variable selection via penalized likelihood (`select = TRUE` to `mgcv::gam`).
+
+---
 
 # Model Diagnostics
 
----
 
-# 
+- Residual plots
 
----
-class: center, middle, inverse
+- `mgcv::plot` Plot summary statistics for the model as well as fitted smooths for the covariates.
 
-# Stepwise Example
+- `mgcv::check`: checks the effective degrees of freedom of terms compared to maximum specified. If a low P value is found increase k and see if model selection criteria has improved (i.e AIC)
 
----
+- `mgcv::summary` outputs P values (for both parametric and non-parametric terms), effective degrees of freedom etc.
 
-# 
-
----
-class: center, middle, inverse
-
-# Full Selection Example
-
----
-
-# 
+- `mgcv::predict` Use to predict values for new data and to output the contribution of covariates on a prediction. 
 
 ---
 class: center, middle, inverse
@@ -93,12 +244,11 @@ class: center, middle, inverse
 # Applications
 
 ---
+class: middle
 
 - Weather Forecasting (https://eeecon.uibk.ac.at/~zeileis/news/thunderstorm_forecasting/)
 
-- Stock market prediction ()
-
-- Loan default risk ()
+- Stock market prediction
 
 - Spatial statistics
 
@@ -108,6 +258,7 @@ class: center, middle, inverse
 # Sign Posting
 
 ---
+class: middle
 
 - A short introduction (https://m-clark.github.io/generalized-additive-models/building_gam.html)
 
@@ -129,3 +280,35 @@ class: center, middle, inverse
 # Summary
 
 ---
+
+# Advantages
+
+- Automated (and statistically valid) feature generation for complex relationships
+
+- Improved performance over manually tuned models (often but not always)
+
+- Framework for complex model building
+
+---
+
+# Disadvantages
+
+- Less interpretable (i.e no model coeffiecients)
+
+- Model stability over time
+
+---
+
+# Potential solutions
+
+- GLM models are often misinterpreted and their manual creation means that spurious relationships may be found. It is possible that GAM are actually more interpretable due to their automatic feature creation.
+
+- Testing the developed model on an out of time test set should alleviate these concerns.
+
+---
+class: center, middle, inverse
+
+# Thanks for listening
+
+---
+
