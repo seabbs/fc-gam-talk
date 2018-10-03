@@ -1,0 +1,249 @@
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ [Kgam@9b1c5d2242a4:~/fc-gam-talk$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git init
+Initialized empty Git repository in /home/gam/fc-gam-talk/.git/
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git add --all
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git commit -m "added outlien of ta[K[K[K[K[K[K[K[Kne of talk  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ [Kgam@9b1c5d2242a4:~/fc-gam-talk$ git config --global user.email s.e.ab bott12@gmail.com
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git config --global user.name  [Kseabbs
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git remote add origin https://github.ccom/seabbs/fc-gam-talk.git
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/seabbs/fc-gam-talk.git'
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ [Kgam@9b1c5d2242a4:~/fc-gam-talk$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   .Rproj.user/B8EE9E0A/console06/E52E7404[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/51E840D3[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/52AF534E[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/79B3D3D3[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/B2238FFC[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/3844C2BD-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/4F228328[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/4F228328-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/8102DB36[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/8102DB36-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/C91557E6[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/C91557E6-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/FEE06711[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/FEE06711-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/lock_file[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/B8EE9E0Ad4649cdf/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/s/csetup_chunk/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/DB827AD7-README/1/B8EE9E0Ad4649cdf/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/DB827AD7-README/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   Dockerfile[m
+	[32mnew file:   README.Rmd[m
+	[32mnew file:   fc-gam-talk.Rproj[m
+	[32mnew file:   libs/remark-css/default-fonts.css[m
+	[32mnew file:   libs/remark-css/default.css[m
+	[32mnew file:   package-setup.R[m
+	[32mnew file:   presentation.Rmd[m
+	[32mnew file:   presentation.html[m
+	[32mnew file:   presentation_files/figure-html/map-global-inc-1.svg[m
+	[32mnew file:   presentation_files/figure-html/plot-inc--by-country-1.svg[m
+	[32mnew file:   presentation_files/figure-html/plot-tb-inc-overview-1.svg[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/B8EE9E0A/console06/E52E7404[m
+	[31mmodified:   .Rproj.user/B8EE9E0A/console06/INDEX001[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/B8EE9E0A/console06/E52E7404.env[m
+
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git a[K[K[K[K[K[Kgam@9b1c5d2242a4:~/fc-gam-talk$ git add .gitignore
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ gi[K[Kgit sgtatu[K[K[K[K[Ktatus
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   .Rproj.user/B8EE9E0A/console06/E52E7404[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/51E840D3[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/52AF534E[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/79B3D3D3[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/B2238FFC[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/3844C2BD-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/4F228328[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/4F228328-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/8102DB36[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/8102DB36-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/C91557E6[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/C91557E6-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/FEE06711[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/FEE06711-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/lock_file[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/B8EE9E0Ad4649cdf/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/s/csetup_chunk/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/DB827AD7-README/1/B8EE9E0Ad4649cdf/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/DB827AD7-README/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   .gitignore[m
+	[32mnew file:   Dockerfile[m
+	[32mnew file:   README.Rmd[m
+	[32mnew file:   fc-gam-talk.Rproj[m
+	[32mnew file:   libs/remark-css/default-fonts.css[m
+	[32mnew file:   libs/remark-css/default.css[m
+	[32mnew file:   package-setup.R[m
+	[32mnew file:   presentation.Rmd[m
+	[32mnew file:   presentation.html[m
+	[32mnew file:   presentation_files/figure-html/map-global-inc-1.svg[m
+	[32mnew file:   presentation_files/figure-html/plot-inc--by-country-1.svg[m
+	[32mnew file:   presentation_files/figure-html/plot-tb-inc-overview-1.svg[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/B8EE9E0A/console06/E52E7404[m
+	[31mmodified:   .Rproj.user/B8EE9E0A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/B8EE9E0A/sources/prop/INDEX[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ gadd [K[K[K[Kit add .gitignore
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git staut[K[Ktus
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   .Rproj.user/B8EE9E0A/console06/E52E7404[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/51E840D3[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/52AF534E[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/79B3D3D3[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/B2238FFC[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/3844C2BD-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/4F228328[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/4F228328-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/8102DB36[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/8102DB36-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/C91557E6[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/C91557E6-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/FEE06711[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/FEE06711-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/lock_file[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/B8EE9E0Ad4649cdf/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/s/csetup_chunk/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/DB827AD7-README/1/B8EE9E0Ad4649cdf/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/DB827AD7-README/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   .gitignore[m
+	[32mnew file:   Dockerfile[m
+	[32mnew file:   README.Rmd[m
+	[32mnew file:   fc-gam-talk.Rproj[m
+	[32mnew file:   libs/remark-css/default-fonts.css[m
+	[32mnew file:   libs/remark-css/default.css[m
+	[32mnew file:   package-setup.R[m
+	[32mnew file:   presentation.Rmd[m
+	[32mnew file:   presentation.html[m
+	[32mnew file:   presentation_files/figure-html/map-global-inc-1.svg[m
+	[32mnew file:   presentation_files/figure-html/plot-inc--by-country-1.svg[m
+	[32mnew file:   presentation_files/figure-html/plot-tb-inc-overview-1.svg[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/B8EE9E0A/console06/E52E7404[m
+	[31mmodified:   .Rproj.user/B8EE9E0A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/B8EE9E0A/sources/prop/INDEX[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ [Kgam@9b1c5d2242a4:~/fc-gam-talk$ got [K[K[Kit add .gitignore
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   .Rproj.user/B8EE9E0A/console06/E52E7404[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/51E840D3[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/52AF534E[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/79B3D3D3[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/B2238FFC[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/3844C2BD-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/4F228328[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/4F228328-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/8102DB36[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/8102DB36-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/C91557E6[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/C91557E6-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/FEE06711[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/FEE06711-contents[m
+	[32mnew file:   .Rproj.user/B8EE9E0A/sources/s-d4649cdf/lock_file[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/B8EE9E0Ad4649cdf/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/11D94CCF-presentation/1/s/csetup_chunk/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/DB827AD7-README/1/B8EE9E0Ad4649cdf/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/DB827AD7-README/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   .gitignore[m
+	[32mnew file:   Dockerfile[m
+	[32mnew file:   README.Rmd[m
+	[32mnew file:   fc-gam-talk.Rproj[m
+	[32mnew file:   libs/remark-css/default-fonts.css[m
+	[32mnew file:   libs/remark-css/default.css[m
+	[32mnew file:   package-setup.R[m
+	[32mnew file:   presentation.Rmd[m
+	[32mnew file:   presentation.html[m
+	[32mnew file:   presentation_files/figure-html/map-global-inc-1.svg[m
+	[32mnew file:   presentation_files/figure-html/plot-inc--by-country-1.svg[m
+	[32mnew file:   presentation_files/figure-html/plot-tb-inc-overview-1.svg[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/B8EE9E0A/console06/E52E7404[m
+	[31mmodified:   .Rproj.user/B8EE9E0A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/B8EE9E0A/sources/prop/INDEX[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git ignore .Rproj.user
+git: 'ignore' is not a git command. See 'git --help'.
+]0;/home/gam/fc-gam-talkgam@9b1c5d2242a4:~/fc-gam-talk$ git add --all

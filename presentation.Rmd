@@ -1,0 +1,131 @@
+---
+title: "GAMs - sorry you mean GLMs?"
+subtitle: "A brief introduction to generalised additive models"
+author: "Sam Abbott"
+date: "2018/10/03"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+# Aims
+
+1. 
+
+---
+class: center, middle, inverse
+
+# Why GAMS
+
+---
+
+- Shown to perform comparably to cutting edge machine learning techniques
+
+- Statistically sound methodology for feature generation and selection
+
+- Some level of interpretability (in comparision to other ML methods).
+
+---
+class: center, middle, inverse
+
+# GLM to GAM
+
+---
+
+# 
+
+---
+class: center, middle, inverse
+
+# Types of Smooth
+
+---
+
+# 
+
+---
+class: center, middle, inverse
+
+# Smoothing penalities and model selection
+
+---
+
+
+
+---
+class: center, middle, inverse
+
+# Model Diagnostics
+
+---
+
+# 
+
+---
+class: center, middle, inverse
+
+# Stepwise Example
+
+---
+
+# 
+
+---
+class: center, middle, inverse
+
+# Full Selection Example
+
+---
+
+# 
+
+---
+class: center, middle, inverse
+
+# Applications
+
+---
+
+- Weather Forecasting (https://eeecon.uibk.ac.at/~zeileis/news/thunderstorm_forecasting/)
+
+- Stock market prediction ()
+
+- Loan default risk ()
+
+- Spatial statistics
+
+---
+class: center, middle, inverse
+
+# Sign Posting
+
+---
+
+- A short introduction (https://m-clark.github.io/generalized-additive-models/building_gam.html)
+
+- Generalized Additive Models - An Introduction with R by Simon N. Wood
+
+- Talk on GAM model selection (https://people.maths.bris.ac.uk/~sw15190/mgcv/check-select.pdf)
+
+- University of Bristol GAM introductory course materials (https://github.com/seabbs/gam-uob-course).
+
+- Introdcution to GAMs slides from Simon Wood (https://people.maths.bris.ac.uk/~sw15190/mgcv/tampere/mgcv.pdf)
+
+- `mgcViz` package (https://github.com/mfasiolo/mgcViz)
+
+- An application focussed book? Still looking (https://twitter.com/seabbs/status/1047389673792950272)
+
+---
+class: center, middle, inverse
+
+# Summary
+
+---
