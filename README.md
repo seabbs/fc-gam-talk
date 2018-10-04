@@ -31,4 +31,4 @@ Listed in no order. - some resources are free and some are not.
 
 - [MGCV 2018 course](https://noamross.github.io/mgcv-esa-2018/)
 
--[From the bottom of the heap - GAM focussed blog](https://www.fromthebottomoftheheap.net)
+- [From the bottom of the heap - GAM focussed blog](https://www.fromthebottomoftheheap.net)
