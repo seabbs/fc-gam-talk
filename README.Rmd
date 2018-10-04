@@ -22,3 +22,18 @@ docker run -d -p 8888:8787 -e USER=gam -e PASSWORD=gam --name gam seabbs/fc-gam-
 ```
 
 The Rstudio server will be found at `localhost:8888`, sign in using the username gam and the password gam.
+
+## Resources
+
+Listed in no order. - some resources are free and some are not.
+
+- [Datacamp GAM course](https://campus.datacamp.com/courses/nonlinear-modeling-in-r-with-gams)
+
+- [Generalized Additive Models - An introduction with R by Simon Wood](people.maths.bris.ac.uk/~sw15190/igam/)
+
+- [Flexible Regression and Smoothing - Using GAMLSS in R](https://www.crcpress.com/Flexible-Regression-and-Smoothing-Using-GAMLSS-in-R/Stasinopoulos-Rigby-Heller-Voudouris-Bastiani/p/book/9781138197909)
+
+- [MGCV 2018 course](https://noamross.github.io/mgcv-esa-2018/)
+
+-[From the bottom of the heap - GAM focussed blog](https://www.fromthebottomoftheheap.net)
+
